@@ -1,11 +1,12 @@
 import React from 'react'
 
-function CharacterCard({data}){
+function CharacterCard({character}){
     return(
         <div className={"CharacterCard"}>
-            <h2 className={"CharacterName"}>{data.name}</h2>
-            <div className={"CharacterPicture"}><img src={data.image}></img></div>
-            <div className={"CharacterDescription"}>{data.type}</div>
+            <h2 className={"CharacterName"}>{character.name}</h2>
+            <div className={"CharacterPicture"}><img src={character.image}></img></div>
+            <div className={"Species"}>{character.species}</div>
+            <div className={"CharacterDescription"}>{character.type}</div>
         </div>
     )
 }
